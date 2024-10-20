@@ -1,0 +1,205 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    background-color: white;
+    height: 5rem;
+    font-weight: bolder;
+    
+}
+
+.nav-link{
+    color: black ;
+}
+
+.fa-compass{
+    color: rgb(241, 208, 21);
+    font-size: 2rem;
+}
+
+/* footer */
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem ;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* //card */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    padding: 1rem !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover !important;
+    height: 20rem;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+.overlay{
+    background-color: white;
+    opacity: 0;
+}
+.overlay:hover{
+    opacity: 0.2;
+}
+
+.add-btn{
+    border: none !important;
+    background-color: rgb(212, 181, 4) !important;
+}
+.add-btn:hover{
+    background-color: #d8c63b !important;
+}
+
+.show-card-img{
+    margin: 2rem 0 !important;
+}
+.show-card-btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.review-card{
+    border: black 2px solid !important;
+    margin-top: 2rem;
+    font-size: larger;
+    
+}
+
+/* .input-search input{
+    margin-right: 0.5rem;
+} */
+.input-search button{
+    border: none !important;
+}
+
+/* .dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+} */
+
+.dashboard-item {
+    background: linear-gradient(135deg, #0f172a, #3b82f6, #6366f1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 25px;
+    animation: gradientAnimation 15s ease infinite;
+    /* width: 200px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.125s;
+}
+.dashboard-item:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0);
+}
+
+.item-form,
+.add-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-button,
+.add-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.item-content h4 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.add-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-button {
+    /* background-color: rgb(19, 133, 146); */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+
+.add-button i {
+    font-size: 30px;
+    color: black;
+    transition: 0.15s ease-in;
+}
+.add-button i:hover {
+    font-size: 35px;
+}
+
+.add-item-btn{
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

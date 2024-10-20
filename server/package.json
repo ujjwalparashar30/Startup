@@ -1,0 +1,31 @@
+{
+  "name": "storage_management_system",
+  "version": "1.0.0",
+  "description": "this is a management based startup where will be building an iot system which will scan barcode and store the data and show it to the mobile app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Ujjwal Parashar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.4.3",
+    "openfoodfacts-nodejs": "github:openfoodfacts/openfoodfacts-nodejs",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "path": "^0.12.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

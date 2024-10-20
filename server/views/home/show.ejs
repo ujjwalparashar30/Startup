@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerPlate.ejs") %>
+    <% if(newItem){ %>
+        <div class="row show-card">
+            <div class="col-8 offset-2">
+                <h3 class="card-title"><b>
+                        <%= newItem.title %>
+                    </b></h3>
+                <div class="col-12">
+                    <img src=<%=newItem.images[0] %> class="card-img-top show-card-img" alt="...">
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">
+                        <br><br>
+                        <%= newItem.description %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% }else{ %>
+            <h1>Product is not present in the database .....</h1>
+            <% } %>
+        <div class="row">
+            <div class="col d-flex justify-content-end align-items-center">
+              <form action="/search/custom/<%-code%>" method="get" class="mb-4 mt-4 me-2">
+                <button class="btn btn-outline-info">Create Custom</button>
+              </form>
+              <% if(newItem){ %>
+              <form action="/search/store/<%-code%>" method="post" class="mb-4 mt-4">
+                <button class="btn btn-outline-success">Store in Inventory</button>
+              </form>
+              <% } %>
+            </div>
+          </div>
+          
+          

@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerPlate") %>
+  <h1 class="mt-4 mb-5 offset-3"><b>Welcome to the Dashboards</b></h1>
+  <div class="dashboard-container row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1">
+    <% for(let item of user.items){ %>
+      <div class="dashboard-item col-4 offset-3">
+        <form action="/search" method="post" class="item-form">
+          <button type="submit" class="item-button">
+            <div class="item-content">
+              <h4>
+                <b>
+                <%= item._item.title %>
+              </b>
+              </h4>
+            </div>
+          </button>
+        </form>
+        <div class="add-item">
+          <form action="" method="post" class="add-form">
+            <div class="input-group mb-3 mt-3 ">
+              <input type="number" class="form-control " value="<%= item.count  %>" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <button class="btn btn-outline-info add-item-btn" type="button" id="button-addon2">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="add-item">
+          <form action="/dashboard/<%=item._item._id %>?_method=DELETE" method="post" class="add-form">
+            <button type="submit" class="btn btn-danger">
+              Remove
+            </button>
+          </form>
+        </div>
+      </div>
+      <% } %>
+  </div>
